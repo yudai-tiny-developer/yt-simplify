@@ -1,0 +1,14 @@
+a.ytp-prev-button,
+a.ytp-next-button,
+button[data-tooltip-target-id="ytp-autonav-toggle-button"],
+button.ytp-subtitles-button,
+button.ytp-miniplayer-button,
+button.ytp-pip-button,
+button.ytp-size-button,
+button.ytp-remote-button,
+div.ytp-tooltip,
+a.ytp-youtube-button {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
