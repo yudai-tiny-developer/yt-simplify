@@ -4,7 +4,7 @@ body {
     justify-content: center;
     margin: 0;
     text-wrap: nowrap;
-    width: 100%;
+    min-width: 100%;
 }
 
 div.grid {
