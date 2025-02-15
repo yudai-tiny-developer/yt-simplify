@@ -1,5 +1,53 @@
 {
     "appDesc": {
-        "message": "Simplify YouTube Control"
+        "message": "YouTube コントロール上のボタンを非表示にする"
+    },
+    "prev": {
+        "message": "前へ"
+    },
+    "play": {
+        "message": "再生/停止"
+    },
+    "next": {
+        "message": "次へ"
+    },
+    "volume": {
+        "message": "音量"
+    },
+    "time": {
+        "message": "タイムコード"
+    },
+    "chapter": {
+        "message": "チャプター"
+    },
+    "autonav": {
+        "message": "自動再生"
+    },
+    "subtitles": {
+        "message": "字幕"
+    },
+    "settings": {
+        "message": "設定"
+    },
+    "miniplayer": {
+        "message": "ミニプレーヤー"
+    },
+    "pip": {
+        "message": "ピクチャー イン ピクチャー"
+    },
+    "size": {
+        "message": "シアター モード"
+    },
+    "remote": {
+        "message": "テレビで再生"
+    },
+    "fullscreen": {
+        "message": "全画面"
+    },
+    "tooltip": {
+        "message": "ツールチップ"
+    },
+    "youtube": {
+        "message": "YouTube で見る"
     }
 }

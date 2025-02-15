@@ -1,5 +1,53 @@
 {
     "appDesc": {
         "message": "Simplify YouTube Control"
+    },
+    "prev": {
+        "message": "Replay"
+    },
+    "play": {
+        "message": "Play/Pause"
+    },
+    "next": {
+        "message": "Next"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "time": {
+        "message": "Timecode"
+    },
+    "chapter": {
+        "message": "Chapter"
+    },
+    "autonav": {
+        "message": "Autoplay"
+    },
+    "subtitles": {
+        "message": "Subtitles"
+    },
+    "settings": {
+        "message": "Settings"
+    },
+    "miniplayer": {
+        "message": "Miniplayer"
+    },
+    "pip": {
+        "message": "Picture-in-picture"
+    },
+    "size": {
+        "message": "Theater mode"
+    },
+    "remote": {
+        "message": "Play on TV"
+    },
+    "fullscreen": {
+        "message": "Full screen"
+    },
+    "tooltip": {
+        "message": "Tooltip"
+    },
+    "youtube": {
+        "message": "Watch on YouTube"
     }
 }
