@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Simplify YouTube",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "__MSG_appDesc__",
     "default_locale": "en",
     "icons": {
@@ -14,11 +14,34 @@
             "css": [
                 "content.css"
             ],
+            "js": [
+                "content.js"
+            ],
             "run_at": "document_end",
             "matches": [
                 "https://www.youtube.com/*"
             ],
             "all_frames": true
         }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "common.js"
+            ],
+            "matches": [
+                "https://www.youtube.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "options_ui": {
+        "page": "popup.html",
+        "open_in_tab": true
+    },
+    "permissions": [
+        "storage"
     ]
 }

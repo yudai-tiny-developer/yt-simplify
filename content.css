@@ -1,14 +1,161 @@
-a.ytp-prev-button,
-a.ytp-next-button,
-button[data-tooltip-target-id="ytp-autonav-toggle-button"],
-button.ytp-subtitles-button,
-button.ytp-miniplayer-button,
-button.ytp-pip-button,
-button.ytp-size-button,
-button.ytp-remote-button,
-div.ytp-tooltip,
-a.ytp-youtube-button {
-    display: none !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+:root {
+    --yt-simplify-prev-display: none;
+    --yt-simplify-prev-visibility: hidden;
+    --yt-simplify-prev-pointer-events: none;
+
+    --yt-simplify-play-display: none;
+    --yt-simplify-play-visibility: hidden;
+    --yt-simplify-play-pointer-events: none;
+
+    --yt-simplify-next-display: none;
+    --yt-simplify-next-visibility: hidden;
+    --yt-simplify-next-pointer-events: none;
+
+    --yt-simplify-volume-display: none;
+    --yt-simplify-volume-visibility: hidden;
+    --yt-simplify-volume-pointer-events: none;
+
+    --yt-simplify-time-display: none;
+    --yt-simplify-time-visibility: hidden;
+    --yt-simplify-time-pointer-events: none;
+
+    --yt-simplify-chapter-display: none;
+    --yt-simplify-chapter-visibility: hidden;
+    --yt-simplify-chapter-pointer-events: none;
+
+    --yt-simplify-autonav-display: none;
+    --yt-simplify-autonav-visibility: hidden;
+    --yt-simplify-autonav-pointer-events: none;
+
+    --yt-simplify-subtitles-display: none;
+    --yt-simplify-subtitles-visibility: hidden;
+    --yt-simplify-subtitles-pointer-events: none;
+
+    --yt-simplify-miniplayer-display: none;
+    --yt-simplify-miniplayer-visibility: hidden;
+    --yt-simplify-miniplayer-pointer-events: none;
+
+    --yt-simplify-pip-display: none;
+    --yt-simplify-pip-visibility: hidden;
+    --yt-simplify-pip-pointer-events: none;
+
+    --yt-simplify-size-display: none;
+    --yt-simplify-size-visibility: hidden;
+    --yt-simplify-size-pointer-events: none;
+
+    --yt-simplify-remote-display: none;
+    --yt-simplify-remote-visibility: hidden;
+    --yt-simplify-remote-pointer-events: none;
+
+    --yt-simplify-settings-display: none;
+    --yt-simplify-settings-visibility: hidden;
+    --yt-simplify-settings-pointer-events: none;
+
+    --yt-simplify-fullscreen-display: none;
+    --yt-simplify-fullscreen-visibility: hidden;
+    --yt-simplify-fullscreen-pointer-events: none;
+
+    --yt-simplify-tooltip-display: none;
+    --yt-simplify-tooltip-visibility: hidden;
+    --yt-simplify-tooltip-pointer-events: none;
+
+    --yt-simplify-youtube-display: none;
+    --yt-simplify-youtube-visibility: hidden;
+    --yt-simplify-youtube-pointer-events: none;
+}
+
+a.ytp-prev-button:not(:empty) {
+    display: var(--yt-simplify-prev-display) !important;
+    visibility: var(--yt-simplify-prev-visibility) !important;
+    pointer-events: var(--yt-simplify-prev-pointer-events) !important;
+}
+
+button.ytp-play-button:not(:empty) {
+    display: var(--yt-simplify-play-display) !important;
+    visibility: var(--yt-simplify-play-visibility) !important;
+    pointer-events: var(--yt-simplify-play-pointer-events) !important;
+}
+
+a.ytp-next-button:not(:empty) {
+    display: var(--yt-simplify-next-display) !important;
+    visibility: var(--yt-simplify-next-visibility) !important;
+    pointer-events: var(--yt-simplify-next-pointer-events) !important;
+}
+
+span.ytp-volume-area:not(:empty) {
+    display: var(--yt-simplify-volume-display) !important;
+    visibility: var(--yt-simplify-volume-visibility) !important;
+    pointer-events: var(--yt-simplify-volume-pointer-events) !important;
+}
+
+div.ytp-time-display:not(:empty) {
+    display: var(--yt-simplify-time-display) !important;
+    visibility: var(--yt-simplify-time-visibility) !important;
+    pointer-events: var(--yt-simplify-time-pointer-events) !important;
+}
+
+div.ytp-chapter-container:not(:has([disabled])):not(:empty) {
+    display: var(--yt-simplify-chapter-display) !important;
+    visibility: var(--yt-simplify-chapter-visibility) !important;
+    pointer-events: var(--yt-simplify-chapter-pointer-events) !important;
+}
+
+button[data-tooltip-target-id="ytp-autonav-toggle-button"]:not(:empty) {
+    display: var(--yt-simplify-autonav-display) !important;
+    visibility: var(--yt-simplify-autonav-visibility) !important;
+    pointer-events: var(--yt-simplify-autonav-pointer-events) !important;
+}
+
+button.ytp-subtitles-button:not(:empty) {
+    display: var(--yt-simplify-subtitles-display) !important;
+    visibility: var(--yt-simplify-subtitles-visibility) !important;
+    pointer-events: var(--yt-simplify-subtitles-pointer-events) !important;
+}
+
+button.ytp-settings-button:not(:empty) {
+    display: var(--yt-simplify-settings-display) !important;
+    visibility: var(--yt-simplify-settings-visibility) !important;
+    pointer-events: var(--yt-simplify-settings-pointer-events) !important;
+}
+
+button.ytp-miniplayer-button:not(:empty) {
+    display: var(--yt-simplify-miniplayer-display) !important;
+    visibility: var(--yt-simplify-miniplayer-visibility) !important;
+    pointer-events: var(--yt-simplify-miniplayer-pointer-events) !important;
+}
+
+button.ytp-pip-button:not(:empty) {
+    display: var(--yt-simplify-pip-display) !important;
+    visibility: var(--yt-simplify-pip-visibility) !important;
+    pointer-events: var(--yt-simplify-pip-pointer-events) !important;
+}
+
+button.ytp-size-button:not(:empty) {
+    display: var(--yt-simplify-size-display) !important;
+    visibility: var(--yt-simplify-size-visibility) !important;
+    pointer-events: var(--yt-simplify-size-pointer-events) !important;
+}
+
+button.ytp-remote-button:not(:empty) {
+    display: var(--yt-simplify-remote-display) !important;
+    visibility: var(--yt-simplify-remote-visibility) !important;
+    pointer-events: var(--yt-simplify-prremoteev-pointer-events) !important;
+}
+
+button.ytp-fullscreen-button:not(:empty) {
+    display: var(--yt-simplify-fullscreen-display) !important;
+    visibility: var(--yt-simplify-fullscreen-visibility) !important;
+    pointer-events: var(--yt-simplify-fullscreen-pointer-events) !important;
+}
+
+div.ytp-tooltip:not(.ytp-preview):not(:empty) {
+    display: var(--yt-simplify-tooltip-display) !important;
+    visibility: var(--yt-simplify-tooltip-visibility) !important;
+    pointer-events: var(--yt-simplify-tooltip-pointer-events) !important;
+}
+
+a.ytp-youtube-button:not(:empty) {
+    display: var(--yt-simplify-youtube-display) !important;
+    visibility: var(--yt-simplify-youtube-visibility) !important;
+    pointer-events: var(--yt-simplify-youtube-pointer-events) !important;
 }
