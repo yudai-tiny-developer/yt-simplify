@@ -4,6 +4,7 @@ body {
     justify-content: center;
     margin: 0;
     text-wrap: nowrap;
+    width: 100%;
 }
 
 div.grid {
@@ -11,8 +12,9 @@ div.grid {
     grid-template-areas:
         "a b"
         "c c";
-    row-gap: 16px;
-    column-gap: 16px;
+    row-gap: 8px;
+    column-gap: 8px;
+    align-items: start;
 }
 
 div.table {
