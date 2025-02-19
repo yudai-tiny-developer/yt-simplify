@@ -79,6 +79,11 @@ function main(common, settings, progress, data) {
         container2.appendChild(row);
     } {
         const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.remote));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'remote_enabled', data.remote_enabled, common.default_remote_enabled, common.value));
+        container2.appendChild(row);
+    } {
+        const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.fullscreen));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'fullscreen_enabled', data.fullscreen_enabled, common.default_fullscreen_enabled, common.value));
         container2.appendChild(row);
