@@ -124,22 +124,10 @@ button.ytp-miniplayer-button:not(:empty) {
     pointer-events: var(--yt-simplify-miniplayer-pointer-events) !important;
 }
 
-button.ytp-pip-button:not(:empty) {
-    display: var(--yt-simplify-pip-display) !important;
-    visibility: var(--yt-simplify-pip-visibility) !important;
-    pointer-events: var(--yt-simplify-pip-pointer-events) !important;
-}
-
 button.ytp-size-button:not(:empty) {
     display: var(--yt-simplify-size-display) !important;
     visibility: var(--yt-simplify-size-visibility) !important;
     pointer-events: var(--yt-simplify-size-pointer-events) !important;
-}
-
-button.ytp-remote-button:not(:empty) {
-    display: var(--yt-simplify-remote-display) !important;
-    visibility: var(--yt-simplify-remote-visibility) !important;
-    pointer-events: var(--yt-simplify-prremoteev-pointer-events) !important;
 }
 
 button.ytp-fullscreen-button:not(:empty) {
