@@ -35,10 +35,6 @@
     --yt-simplify-miniplayer-visibility: hidden;
     --yt-simplify-miniplayer-pointer-events: none;
 
-    --yt-simplify-pip-display: none;
-    --yt-simplify-pip-visibility: hidden;
-    --yt-simplify-pip-pointer-events: none;
-
     --yt-simplify-size-display: none;
     --yt-simplify-size-visibility: hidden;
     --yt-simplify-size-pointer-events: none;
@@ -128,6 +124,12 @@ button.ytp-size-button:not(:empty) {
     display: var(--yt-simplify-size-display) !important;
     visibility: var(--yt-simplify-size-visibility) !important;
     pointer-events: var(--yt-simplify-size-pointer-events) !important;
+}
+
+button.ytp-remote-button:not([aria-expanded="false"]):not(:empty) {
+    display: var(--yt-simplify-remote-display) !important;
+    visibility: var(--yt-simplify-remote-visibility) !important;
+    pointer-events: var(--yt-simplify-prremoteev-pointer-events) !important;
 }
 
 button.ytp-fullscreen-button:not(:empty) {

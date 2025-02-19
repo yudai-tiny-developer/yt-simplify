@@ -47,10 +47,6 @@ function main(common) {
             document.documentElement.style.setProperty(`--yt-simplify-miniplayer-visibility`, common.value(data.miniplayer_enabled, common.default_miniplayer_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty(`--yt-simplify-miniplayer-pointer-events`, common.value(data.miniplayer_enabled, common.default_miniplayer_enabled) ? 'unset' : 'none');
 
-            document.documentElement.style.setProperty(`--yt-simplify-pip-display`, common.value(data.pip_enabled, common.default_pip_enabled) ? 'inline-block' : 'none');
-            document.documentElement.style.setProperty(`--yt-simplify-pip-visibility`, common.value(data.pip_enabled, common.default_pip_enabled) ? 'unset' : 'hidden');
-            document.documentElement.style.setProperty(`--yt-simplify-pip-pointer-events`, common.value(data.pip_enabled, common.default_pip_enabled) ? 'unset' : 'none');
-
             document.documentElement.style.setProperty(`--yt-simplify-size-display`, common.value(data.size_enabled, common.default_size_enabled) ? 'inline-block' : 'none');
             document.documentElement.style.setProperty(`--yt-simplify-size-visibility`, common.value(data.size_enabled, common.default_size_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty(`--yt-simplify-size-pointer-events`, common.value(data.size_enabled, common.default_size_enabled) ? 'unset' : 'none');
@@ -71,11 +67,10 @@ function main(common) {
             document.documentElement.style.setProperty(`--yt-simplify-youtube-visibility`, common.value(data.youtube_enabled, common.default_youtube_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty(`--yt-simplify-youtube-pointer-events`, common.value(data.youtube_enabled, common.default_youtube_enabled) ? 'unset' : 'none');
         });
+
+        return true;
     }
 
-    chrome.storage.onChanged.addListener(() => {
-        loadSettings();
-    });
-
+    chrome.storage.onChanged.addListener(loadSettings);
     loadSettings();
 }
