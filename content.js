@@ -67,10 +67,9 @@ function main(common) {
             document.documentElement.style.setProperty(`--yt-simplify-youtube-visibility`, common.value(data.youtube_enabled, common.default_youtube_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty(`--yt-simplify-youtube-pointer-events`, common.value(data.youtube_enabled, common.default_youtube_enabled) ? 'unset' : 'none');
         });
-
-        return true;
     }
 
     chrome.storage.onChanged.addListener(loadSettings);
+
     loadSettings();
 }
