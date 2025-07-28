@@ -32,6 +32,9 @@
     "miniplayer": {
         "message": "Miniplayer"
     },
+    "pip": {
+        "message": "PiP"
+    },
     "size": {
         "message": "Theater mode"
     },

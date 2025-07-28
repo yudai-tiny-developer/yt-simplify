@@ -74,6 +74,11 @@ function main(common, settings, progress, data) {
         container2.appendChild(row);
     } {
         const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.pip));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'pip_enabled', data.pip_enabled, common.default_pip_enabled, common.value));
+        container2.appendChild(row);
+    } {
+        const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.size));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'size_enabled', data.size_enabled, common.default_size_enabled, common.value));
         container2.appendChild(row);

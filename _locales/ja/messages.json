@@ -32,6 +32,9 @@
     "miniplayer": {
         "message": "ミニプレーヤー"
     },
+    "pip": {
+        "message": "ピクチャーインピクチャー"
+    },
     "size": {
         "message": "シアター モード"
     },

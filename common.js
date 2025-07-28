@@ -9,6 +9,7 @@ export const storage = [
     'subtitles_enabled',
     'settings_enabled',
     'miniplayer_enabled',
+    'pip_enabled',
     'size_enabled',
     'remote_enabled',
     'fullscreen_enabled',
@@ -26,6 +27,7 @@ export const default_autonav_enabled = false;
 export const default_subtitles_enabled = false;
 export const default_settings_enabled = true;
 export const default_miniplayer_enabled = false;
+export const default_pip_enabled = false;
 export const default_size_enabled = false;
 export const default_remote_enabled = false;
 export const default_fullscreen_enabled = true;
@@ -43,6 +45,7 @@ export const label = {
     subtitles: chrome.i18n.getMessage('subtitles'),
     settings: chrome.i18n.getMessage('settings'),
     miniplayer: chrome.i18n.getMessage('miniplayer'),
+    pip: chrome.i18n.getMessage('pip'),
     size: chrome.i18n.getMessage('size'),
     remote: chrome.i18n.getMessage('remote'),
     fullscreen: chrome.i18n.getMessage('fullscreen'),

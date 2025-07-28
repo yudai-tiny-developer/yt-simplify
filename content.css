@@ -35,6 +35,10 @@
     --yt-simplify-miniplayer-visibility: hidden;
     --yt-simplify-miniplayer-pointer-events: none;
 
+    --yt-simplify-pip-display: none;
+    --yt-simplify-pip-visibility: hidden;
+    --yt-simplify-pip-pointer-events: none;
+
     --yt-simplify-size-display: none;
     --yt-simplify-size-visibility: hidden;
     --yt-simplify-size-pointer-events: none;
@@ -124,6 +128,12 @@ button.ytp-miniplayer-button:not(:empty) {
     display: var(--yt-simplify-miniplayer-display) !important;
     visibility: var(--yt-simplify-miniplayer-visibility) !important;
     pointer-events: var(--yt-simplify-miniplayer-pointer-events) !important;
+}
+
+button.ytp-pip-button:not(:empty) {
+    display: var(--yt-simplify-pip-display) !important;
+    visibility: var(--yt-simplify-pip-visibility) !important;
+    pointer-events: var(--yt-simplify-pip-pointer-events) !important;
 }
 
 button.ytp-size-button:not(:empty) {
