@@ -136,6 +136,10 @@ button.ytp-pip-button:not(:empty) {
     pointer-events: var(--yt-simplify-pip-pointer-events) !important;
 }
 
+button.ytp-pip-button > svg {
+    transform: translate(-12px, -8px) !important;
+}
+
 button.ytp-size-button:not(:empty) {
     display: var(--yt-simplify-size-display) !important;
     visibility: var(--yt-simplify-size-visibility) !important;
