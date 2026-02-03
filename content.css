@@ -88,12 +88,6 @@ span.ytp-volume-area:not(:empty) {
     pointer-events: var(--yt-simplify-volume-pointer-events) !important;
 }
 
-div.ytp-mute-button:not(:empty) {
-    display: var(--yt-simplify-volume-display) !important;
-    visibility: var(--yt-simplify-volume-visibility) !important;
-    pointer-events: var(--yt-simplify-volume-pointer-events) !important;
-}
-
 div.ytp-time-display:not(.ytp-live):not(:empty) {
     display: var(--yt-simplify-time-display) !important;
     visibility: var(--yt-simplify-time-visibility) !important;
