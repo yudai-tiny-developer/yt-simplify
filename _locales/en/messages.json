@@ -49,5 +49,8 @@
     },
     "youtube": {
         "message": "Watch on YouTube"
+    },
+    "fullscreen_grid": {
+        "message": "Fullscreen Grid"
     }
 }

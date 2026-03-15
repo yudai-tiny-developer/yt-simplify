@@ -54,6 +54,11 @@ function main(common, settings, progress, data) {
         container1.appendChild(row);
     } {
         const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.fullscreen_grid));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'fullscreen_grid_enabled', data.fullscreen_grid_enabled, common.default_fullscreen_grid_enabled, common.value));
+        container1.appendChild(row);
+    } {
+        const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.autonav));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'autonav_enabled', data.autonav_enabled, common.default_autonav_enabled, common.value));
         container2.appendChild(row);

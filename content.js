@@ -70,10 +70,39 @@ function main(common) {
             document.documentElement.style.setProperty(`--yt-simplify-youtube-display`, common.value(data.youtube_enabled, common.default_youtube_enabled) ? 'inline-block' : 'none');
             document.documentElement.style.setProperty(`--yt-simplify-youtube-visibility`, common.value(data.youtube_enabled, common.default_youtube_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty(`--yt-simplify-youtube-pointer-events`, common.value(data.youtube_enabled, common.default_youtube_enabled) ? 'unset' : 'none');
+
+            document.documentElement.style.setProperty(`--yt-simplify-fullscreen-grid-display`, common.value(data.fullscreen_grid_enabled, common.default_fullscreen_grid_enabled) ? 'block' : 'none');
+            document.documentElement.style.setProperty(`--yt-simplify-fullscreen-grid-visibility`, common.value(data.fullscreen_grid_enabled, common.default_fullscreen_grid_enabled) ? 'unset' : 'hidden');
+            document.documentElement.style.setProperty(`--yt-simplify-fullscreen-grid-pointer-events`, common.value(data.fullscreen_grid_enabled, common.default_fullscreen_grid_enabled) ? 'unset' : 'none');
+            fullscreen_grid_enabled = data.fullscreen_grid_enabled;
         });
     }
 
     chrome.storage.onChanged.addListener(loadSettings);
 
     loadSettings();
+
+    let fullscreen_grid_enabled = common.default_fullscreen_grid_enabled;
+
+    setInterval(() => {
+        const player = document.getElementById('movie_player');
+        if (!player) return;
+
+        const video = player.querySelector('video');
+        if (!video) return;
+
+        if (player.classList.contains('ytp-fullscreen')) {
+            if (common.value(fullscreen_grid_enabled, common.default_fullscreen_grid_enabled)) {
+                if (!player.classList.contains('ytp-full-bleed-player')) {
+                    player.style.setProperty('--ytp-grid-scroll-percentage', 0);
+                    player.classList.add('ytp-full-bleed-player');
+                }
+            } else {
+                if (player.classList.contains('ytp-full-bleed-player')) {
+                    player.style.setProperty('--ytp-grid-scroll-percentage', 0);
+                    player.classList.remove('ytp-full-bleed-player');
+                }
+            }
+        }
+    }, 500);
 }
