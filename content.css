@@ -122,12 +122,6 @@ button.ytp-settings-button:not(:empty) {
     pointer-events: var(--yt-simplify-settings-pointer-events) !important;
 }
 
-button.ytp-miniplayer-button:not(:empty) {
-    display: var(--yt-simplify-miniplayer-display) !important;
-    visibility: var(--yt-simplify-miniplayer-visibility) !important;
-    pointer-events: var(--yt-simplify-miniplayer-pointer-events) !important;
-}
-
 button.ytp-pip-button:not(:empty) {
     display: var(--yt-simplify-pip-display) !important;
     visibility: var(--yt-simplify-pip-visibility) !important;
