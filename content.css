@@ -62,6 +62,10 @@
     --yt-simplify-youtube-display: none;
     --yt-simplify-youtube-visibility: hidden;
     --yt-simplify-youtube-pointer-events: none;
+
+    --yt-simplify-fullscreen-grid-display: none;
+    --yt-simplify-fullscreen-grid-visibility: hidden;
+    --yt-simplify-fullscreen-grid-pointer-events: none;
 }
 
 a.ytp-prev-button:not(:empty) {
@@ -118,12 +122,6 @@ button.ytp-settings-button:not(:empty) {
     pointer-events: var(--yt-simplify-settings-pointer-events) !important;
 }
 
-button.ytp-miniplayer-button:not(:empty) {
-    display: var(--yt-simplify-miniplayer-display) !important;
-    visibility: var(--yt-simplify-miniplayer-visibility) !important;
-    pointer-events: var(--yt-simplify-miniplayer-pointer-events) !important;
-}
-
 button.ytp-pip-button:not(:empty) {
     display: var(--yt-simplify-pip-display) !important;
     visibility: var(--yt-simplify-pip-visibility) !important;
@@ -162,4 +160,10 @@ a.ytp-youtube-button:not(:empty) {
     display: var(--yt-simplify-youtube-display) !important;
     visibility: var(--yt-simplify-youtube-visibility) !important;
     pointer-events: var(--yt-simplify-youtube-pointer-events) !important;
+}
+
+div#movie_player.html5-video-player.ytp-fullscreen.ytp-grid-scrollable > div.ytp-fullscreen-grid {
+    display: var(--yt-simplify-fullscreen-grid-display) !important;
+    visibility: var(--yt-simplify-fullscreen-grid-visibility) !important;
+    pointer-events: var(--yt-simplify-fullscreen-grid-pointer-events) !important;
 }

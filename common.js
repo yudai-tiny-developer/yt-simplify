@@ -15,6 +15,7 @@ export const storage = [
     'fullscreen_enabled',
     'tooltip_enabled',
     'youtube_enabled',
+    'fullscreen_grid_enabled',
 ];
 
 export const default_prev_enabled = false;
@@ -33,6 +34,7 @@ export const default_remote_enabled = false;
 export const default_fullscreen_enabled = true;
 export const default_tooltip_enabled = false;
 export const default_youtube_enabled = false;
+export const default_fullscreen_grid_enabled = false;
 
 export const label = {
     prev: chrome.i18n.getMessage('prev'),
@@ -51,6 +53,7 @@ export const label = {
     fullscreen: chrome.i18n.getMessage('fullscreen'),
     tooltip: chrome.i18n.getMessage('tooltip'),
     youtube: chrome.i18n.getMessage('youtube'),
+    fullscreen_grid: chrome.i18n.getMessage('fullscreen_grid'),
 };
 
 export function value(value, defaultValue) {

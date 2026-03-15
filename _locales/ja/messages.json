@@ -49,5 +49,8 @@
     },
     "youtube": {
         "message": "YouTube で見る"
+    },
+    "fullscreen_grid": {
+        "message": "Fullscreen Grid"
     }
 }
