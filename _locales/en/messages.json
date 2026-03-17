@@ -52,5 +52,86 @@
     },
     "fullscreen_grid": {
         "message": "Fullscreen Grid"
+    },
+    "search_voice": {
+        "message": "Search Voice"
+    },
+    "create": {
+        "message": "Create"
+    },
+    "notifications": {
+        "message": "Notifications"
+    },
+    "account": {
+        "message": "Account"
+    },
+    "sidebar_home": {
+        "message": "Home"
+    },
+    "sidebar_shorts": {
+        "message": "Shorts"
+    },
+    "sidebar_subscriptions": {
+        "message": "Subscriptions"
+    },
+    "sidebar_subscriptions_channels": {
+        "message": "Subscriptions Channels"
+    },
+    "sidebar_library": {
+        "message": "You"
+    },
+    "sidebar_history": {
+        "message": "History"
+    },
+    "sidebar_playlists": {
+        "message": "Playlists"
+    },
+    "sidebar_watch_later": {
+        "message": "Watch Later"
+    },
+    "sidebar_liked_videos": {
+        "message": "Liked Videos"
+    },
+    "sidebar_your_videos": {
+        "message": "Your Videos"
+    },
+    "sidebar_downloads": {
+        "message": "Downloads"
+    },
+    "sidebar_music": {
+        "message": "Music"
+    },
+    "sidebar_movies": {
+        "message": "Movies & TV"
+    },
+    "sidebar_live": {
+        "message": "Live"
+    },
+    "sidebar_gaming": {
+        "message": "Gaming"
+    },
+    "sidebar_news": {
+        "message": "News"
+    },
+    "sidebar_sports": {
+        "message": "Sports"
+    },
+    "sidebar_courses": {
+        "message": "Courses"
+    },
+    "sidebar_youtube_premium": {
+        "message": "YouTube Premium"
+    },
+    "sidebar_youtube_music": {
+        "message": "YouTube Music"
+    },
+    "sidebar_youtube_kids": {
+        "message": "YouTube Kids"
+    },
+    "sidebar_report_history": {
+        "message": "Report History"
+    },
+    "sidebar_about": {
+        "message": "About"
     }
 }

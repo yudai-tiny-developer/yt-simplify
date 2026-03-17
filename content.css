@@ -66,104 +66,398 @@
     --yt-simplify-fullscreen-grid-display: none;
     --yt-simplify-fullscreen-grid-visibility: hidden;
     --yt-simplify-fullscreen-grid-pointer-events: none;
+
+    --yt-simplify-search-voice-display: none;
+    --yt-simplify-search-voice-visibility: hidden;
+    --yt-simplify-search-voice-pointer-events: none;
+
+    --yt-simplify-create-display: none;
+    --yt-simplify-create-visibility: hidden;
+    --yt-simplify-create-pointer-events: none;
+
+    --yt-simplify-notifications-display: none;
+    --yt-simplify-notifications-visibility: hidden;
+    --yt-simplify-notifications-pointer-events: none;
+
+    --yt-simplify-account-display: none;
+    --yt-simplify-account-visibility: hidden;
+    --yt-simplify-account-pointer-events: none;
+
+    --yt-simplify-sidebar-home-display: none;
+    --yt-simplify-sidebar-home-visibility: hidden;
+    --yt-simplify-sidebar-home-pointer-events: none;
+
+    --yt-simplify-sidebar-shorts-display: none;
+    --yt-simplify-sidebar-shorts-visibility: hidden;
+    --yt-simplify-sidebar-shorts-pointer-events: none;
+
+    --yt-simplify-sidebar-subscriptions-display: none;
+    --yt-simplify-sidebar-subscriptions-visibility: hidden;
+    --yt-simplify-sidebar-subscriptions-pointer-events: none;
+
+    --yt-simplify-sidebar-subscriptions-channels-display: none;
+    --yt-simplify-sidebar-subscriptions-channels-visibility: hidden;
+    --yt-simplify-sidebar-subscriptions-channels-pointer-events: none;
+
+    --yt-simplify-sidebar-you-display: none;
+    --yt-simplify-sidebar-you-visibility: hidden;
+    --yt-simplify-sidebar-you-pointer-events: none;
+
+    --yt-simplify-sidebar-history-display: none;
+    --yt-simplify-sidebar-history-visibility: hidden;
+    --yt-simplify-sidebar-history-pointer-events: none;
+
+    --yt-simplify-sidebar-playlists-display: none;
+    --yt-simplify-sidebar-playlists-visibility: hidden;
+    --yt-simplify-sidebar-playlists-pointer-events: none;
+
+    --yt-simplify-sidebar-watch-later-display: none;
+    --yt-simplify-sidebar-watch-later-visibility: hidden;
+    --yt-simplify-sidebar-watch-later-pointer-events: none;
+
+    --yt-simplify-sidebar-liked-videos-display: none;
+    --yt-simplify-sidebar-liked-videos-visibility: hidden;
+    --yt-simplify-sidebar-liked-videos-pointer-events: none;
+
+    --yt-simplify-sidebar-your-videos-display: none;
+    --yt-simplify-sidebar-your-videos-visibility: hidden;
+    --yt-simplify-sidebar-your-videos-pointer-events: none;
+
+    --yt-simplify-sidebar-downloads-display: none;
+    --yt-simplify-sidebar-downloads-visibility: hidden;
+    --yt-simplify-sidebar-downloads-pointer-events: none;
+
+    --yt-simplify-sidebar-music-display: none;
+    --yt-simplify-sidebar-music-visibility: hidden;
+    --yt-simplify-sidebar-music-pointer-events: none;
+
+    --yt-simplify-sidebar-movies-display: none;
+    --yt-simplify-sidebar-movies-visibility: hidden;
+    --yt-simplify-sidebar-movies-pointer-events: none;
+
+    --yt-simplify-sidebar-live-display: none;
+    --yt-simplify-sidebar-live-visibility: hidden;
+    --yt-simplify-sidebar-live-pointer-events: none;
+
+    --yt-simplify-sidebar-gaming-display: none;
+    --yt-simplify-sidebar-gaming-visibility: hidden;
+    --yt-simplify-sidebar-gaming-pointer-events: none;
+
+    --yt-simplify-sidebar-news-display: none;
+    --yt-simplify-sidebar-news-visibility: hidden;
+    --yt-simplify-sidebar-news-pointer-events: none;
+
+    --yt-simplify-sidebar-sports-display: none;
+    --yt-simplify-sidebar-sports-visibility: hidden;
+    --yt-simplify-sidebar-sports-pointer-events: none;
+
+    --yt-simplify-sidebar-courses-display: none;
+    --yt-simplify-sidebar-courses-visibility: hidden;
+    --yt-simplify-sidebar-courses-pointer-events: none;
+
+    --yt-simplify-sidebar-youtube-premium-display: none;
+    --yt-simplify-sidebar-youtube-premium-visibility: hidden;
+    --yt-simplify-sidebar-youtube-premium-pointer-events: none;
+
+    --yt-simplify-sidebar-youtube-music-display: none;
+    --yt-simplify-sidebar-youtube-music-visibility: hidden;
+    --yt-simplify-sidebar-youtube-music-pointer-events: none;
+
+    --yt-simplify-sidebar-youtube-kids-display: none;
+    --yt-simplify-sidebar-youtube-kids-visibility: hidden;
+    --yt-simplify-sidebar-youtube-kids-pointer-events: none;
+
+    --yt-simplify-sidebar-report-history-display: none;
+    --yt-simplify-sidebar-report-history-visibility: hidden;
+    --yt-simplify-sidebar-report-history-pointer-events: none;
+
+    --yt-simplify-sidebar-about-display: none;
+    --yt-simplify-sidebar-about-visibility: hidden;
+    --yt-simplify-sidebar-about-pointer-events: none;
 }
 
-a.ytp-prev-button:not(:empty) {
+div#movie_player a.ytp-prev-button:not(:empty) {
     display: var(--yt-simplify-prev-display) !important;
     visibility: var(--yt-simplify-prev-visibility) !important;
     pointer-events: var(--yt-simplify-prev-pointer-events) !important;
 }
 
-button.ytp-play-button:not(:empty) {
+div#movie_player button.ytp-play-button:not(:empty) {
     display: var(--yt-simplify-play-display) !important;
     visibility: var(--yt-simplify-play-visibility) !important;
     pointer-events: var(--yt-simplify-play-pointer-events) !important;
 }
 
-a.ytp-next-button:not(:empty) {
+div#movie_player a.ytp-next-button:not(:empty) {
     display: var(--yt-simplify-next-display) !important;
     visibility: var(--yt-simplify-next-visibility) !important;
     pointer-events: var(--yt-simplify-next-pointer-events) !important;
 }
 
-span.ytp-volume-area:not(:empty) {
+div#movie_player span.ytp-volume-area:not(:empty) {
     display: var(--yt-simplify-volume-display) !important;
     visibility: var(--yt-simplify-volume-visibility) !important;
     pointer-events: var(--yt-simplify-volume-pointer-events) !important;
 }
 
-div.ytp-time-display:not(.ytp-live):not(:empty) {
+div#movie_player div.ytp-time-display:not(.ytp-live):not(:empty) {
     display: var(--yt-simplify-time-display) !important;
     visibility: var(--yt-simplify-time-visibility) !important;
     pointer-events: var(--yt-simplify-time-pointer-events) !important;
 }
 
-div.ytp-chapter-container:not(:has([disabled])):not(:empty) {
+div#movie_player div.ytp-chapter-container:not(:has([disabled])):not(:empty) {
     display: var(--yt-simplify-chapter-display) !important;
     visibility: var(--yt-simplify-chapter-visibility) !important;
     pointer-events: var(--yt-simplify-chapter-pointer-events) !important;
 }
 
-button[data-tooltip-target-id="ytp-autonav-toggle-button"]:not(:empty) {
+div#movie_player button[data-tooltip-target-id="ytp-autonav-toggle-button"]:not(:empty) {
     display: var(--yt-simplify-autonav-display) !important;
     visibility: var(--yt-simplify-autonav-visibility) !important;
     pointer-events: var(--yt-simplify-autonav-pointer-events) !important;
 }
 
-button.ytp-subtitles-button:not(:empty) {
+div#movie_player button.ytp-subtitles-button:not(:empty) {
     display: var(--yt-simplify-subtitles-display) !important;
     visibility: var(--yt-simplify-subtitles-visibility) !important;
     pointer-events: var(--yt-simplify-subtitles-pointer-events) !important;
 }
 
-button.ytp-settings-button:not(:empty) {
+div#movie_player button.ytp-settings-button:not(:empty) {
     display: var(--yt-simplify-settings-display) !important;
     visibility: var(--yt-simplify-settings-visibility) !important;
     pointer-events: var(--yt-simplify-settings-pointer-events) !important;
 }
 
-button.ytp-pip-button:not(:empty) {
+div#movie_player button.ytp-pip-button:not(:empty) {
     display: var(--yt-simplify-pip-display) !important;
     visibility: var(--yt-simplify-pip-visibility) !important;
     pointer-events: var(--yt-simplify-pip-pointer-events) !important;
 }
 
-button.ytp-pip-button > svg {
+div#movie_player button.ytp-pip-button>svg {
     transform: translate(-12px, -8px) !important;
 }
 
-button.ytp-size-button:not(:empty) {
+div#movie_player button.ytp-size-button:not(:empty) {
     display: var(--yt-simplify-size-display) !important;
     visibility: var(--yt-simplify-size-visibility) !important;
     pointer-events: var(--yt-simplify-size-pointer-events) !important;
 }
 
-button.ytp-remote-button:not([aria-expanded="false"]):not(:empty) {
+div#movie_player button.ytp-remote-button:not([aria-expanded="false"]):not(:empty) {
     display: var(--yt-simplify-remote-display) !important;
     visibility: var(--yt-simplify-remote-visibility) !important;
     pointer-events: var(--yt-simplify-prremoteev-pointer-events) !important;
 }
 
-button.ytp-fullscreen-button:not(:empty) {
+div#movie_player button.ytp-fullscreen-button:not(:empty) {
     display: var(--yt-simplify-fullscreen-display) !important;
     visibility: var(--yt-simplify-fullscreen-visibility) !important;
     pointer-events: var(--yt-simplify-fullscreen-pointer-events) !important;
 }
 
-div.ytp-tooltip:not(.ytp-preview):not(:empty) {
+div#movie_player div.ytp-tooltip:not(.ytp-preview):not(:empty) {
     display: var(--yt-simplify-tooltip-display) !important;
     visibility: var(--yt-simplify-tooltip-visibility) !important;
     pointer-events: var(--yt-simplify-tooltip-pointer-events) !important;
 }
 
-a.ytp-youtube-button:not(:empty) {
+div#movie_player a.ytp-youtube-button:not(:empty) {
     display: var(--yt-simplify-youtube-display) !important;
     visibility: var(--yt-simplify-youtube-visibility) !important;
     pointer-events: var(--yt-simplify-youtube-pointer-events) !important;
 }
 
-div#movie_player.html5-video-player.ytp-fullscreen.ytp-grid-scrollable > div.ytp-fullscreen-grid {
+div#movie_player.html5-video-player.ytp-fullscreen.ytp-grid-scrollable>div.ytp-fullscreen-grid {
     display: var(--yt-simplify-fullscreen-grid-display) !important;
     visibility: var(--yt-simplify-fullscreen-grid-visibility) !important;
     pointer-events: var(--yt-simplify-fullscreen-grid-pointer-events) !important;
+}
+
+ytd-masthead#masthead div#voice-search-button {
+    display: var(--yt-simplify-search-voice-display) !important;
+    visibility: var(--yt-simplify-search-voice-visibility) !important;
+    pointer-events: var(--yt-simplify-search-voice-pointer-events) !important;
+}
+
+ytd-masthead#masthead>div#container>div#end>div#buttons>ytd-button-renderer {
+    display: var(--yt-simplify-create-display) !important;
+    visibility: var(--yt-simplify-create-visibility) !important;
+    pointer-events: var(--yt-simplify-create-pointer-events) !important;
+}
+
+ytd-masthead#masthead ytd-notification-topbar-button-renderer {
+    display: var(--yt-simplify-notifications-display) !important;
+    visibility: var(--yt-simplify-notifications-visibility) !important;
+    pointer-events: var(--yt-simplify-notifications-pointer-events) !important;
+}
+
+ytd-masthead#masthead ytd-topbar-menu-button-renderer {
+    display: var(--yt-simplify-account-display) !important;
+    visibility: var(--yt-simplify-account-visibility) !important;
+    pointer-events: var(--yt-simplify-account-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/"]) {
+    display: var(--yt-simplify-sidebar-home-display) !important;
+    visibility: var(--yt-simplify-sidebar-home-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-home-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/"]) ytd-guide-entry-renderer:has(a#endpoint:not([href="/"])) {
+    display: var(--yt-simplify-sidebar-shorts-display) !important;
+    visibility: var(--yt-simplify-sidebar-shorts-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-shorts-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/subscriptions"]) {
+    display: var(--yt-simplify-sidebar-subscriptions-display) !important;
+    visibility: var(--yt-simplify-sidebar-subscriptions-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="/@"]) {
+    display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
+    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer:has(a#endpoint[href^="/channel/"]) {
+    display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
+    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="/c/"]) {
+    display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
+    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="/user/"]) {
+    display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
+    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer:not(:has(a#endpoint[href="/feed/subscriptions"])):has(tp-yt-paper-item) {
+    display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
+    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/you"]) {
+    display: var(--yt-simplify-sidebar-library-display) !important;
+    visibility: var(--yt-simplify-sidebar-library-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-library-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/history"]) {
+    display: var(--yt-simplify-sidebar-history-display) !important;
+    visibility: var(--yt-simplify-sidebar-history-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-history-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/playlists"]) {
+    display: var(--yt-simplify-sidebar-playlists-display) !important;
+    visibility: var(--yt-simplify-sidebar-playlists-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-playlists-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/playlist?list=WL"]) {
+    display: var(--yt-simplify-sidebar-watch-later-display) !important;
+    visibility: var(--yt-simplify-sidebar-watch-later-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-watch-later-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/playlist?list=LL"]) {
+    display: var(--yt-simplify-sidebar-liked-videos-display) !important;
+    visibility: var(--yt-simplify-sidebar-liked-videos-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-liked-videos-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="https://studio.youtube.com/channel/"]) {
+    display: var(--yt-simplify-sidebar-your-videos-display) !important;
+    visibility: var(--yt-simplify-sidebar-your-videos-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-your-videos-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/downloads"]) {
+    display: var(--yt-simplify-sidebar-downloads-display) !important;
+    visibility: var(--yt-simplify-sidebar-downloads-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-downloads-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"]) {
+    display: var(--yt-simplify-sidebar-music-display) !important;
+    visibility: var(--yt-simplify-sidebar-music-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-music-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="/feed/storefront"]) {
+    display: var(--yt-simplify-sidebar-movies-display) !important;
+    visibility: var(--yt-simplify-sidebar-movies-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-movies-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/channel/UC4R8DWoMoI7CAwX8_LjQHig"]) {
+    display: var(--yt-simplify-sidebar-live-display) !important;
+    visibility: var(--yt-simplify-sidebar-live-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-live-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/gaming"]) {
+    display: var(--yt-simplify-sidebar-gaming-display) !important;
+    visibility: var(--yt-simplify-sidebar-gaming-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-gaming-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/channel/UCYfdidRxbB8Qhf0Nx7ioOYw"]) {
+    display: var(--yt-simplify-sidebar-news-display) !important;
+    visibility: var(--yt-simplify-sidebar-news-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-news-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"]) {
+    display: var(--yt-simplify-sidebar-sports-display) !important;
+    visibility: var(--yt-simplify-sidebar-sports-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-sports-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/courses_destination"]) {
+    display: var(--yt-simplify-sidebar-courses-display) !important;
+    visibility: var(--yt-simplify-sidebar-courses-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-courses-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/premium"]) {
+    display: var(--yt-simplify-sidebar-youtube-premium-display) !important;
+    visibility: var(--yt-simplify-sidebar-youtube-premium-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-youtube-premium-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="https://music.youtube.com/"]) {
+    display: var(--yt-simplify-sidebar-youtube-music-display) !important;
+    visibility: var(--yt-simplify-sidebar-youtube-music-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-youtube-music-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="https://www.youtubekids.com/"]) {
+    display: var(--yt-simplify-sidebar-youtube-kids-display) !important;
+    visibility: var(--yt-simplify-sidebar-youtube-kids-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-youtube-kids-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="/reporthistory"]) {
+    display: var(--yt-simplify-sidebar-report-history-display) !important;
+    visibility: var(--yt-simplify-sidebar-report-history-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-report-history-pointer-events) !important;
+}
+
+tp-yt-app-drawer #footer {
+    display: var(--yt-simplify-sidebar-about-display) !important;
+    visibility: var(--yt-simplify-sidebar-about-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-about-pointer-events) !important;
 }

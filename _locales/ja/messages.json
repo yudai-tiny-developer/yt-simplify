@@ -52,5 +52,86 @@
     },
     "fullscreen_grid": {
         "message": "Fullscreen Grid"
+    },
+    "search_voice": {
+        "message": "音声で検索"
+    },
+    "create": {
+        "message": "作成"
+    },
+    "notifications": {
+        "message": "通知"
+    },
+    "account": {
+        "message": "アカウント"
+    },
+    "sidebar_home": {
+        "message": "ホーム"
+    },
+    "sidebar_shorts": {
+        "message": "ショート"
+    },
+    "sidebar_subscriptions": {
+        "message": "登録チャンネル"
+    },
+    "sidebar_subscriptions_channels": {
+        "message": "各チャンネル"
+    },
+    "sidebar_library": {
+        "message": "マイページ"
+    },
+    "sidebar_history": {
+        "message": "履歴"
+    },
+    "sidebar_playlists": {
+        "message": "再生リスト"
+    },
+    "sidebar_watch_later": {
+        "message": "後で見る"
+    },
+    "sidebar_liked_videos": {
+        "message": "高く評価した動画"
+    },
+    "sidebar_your_videos": {
+        "message": "作成した動画"
+    },
+    "sidebar_downloads": {
+        "message": "オフライン"
+    },
+    "sidebar_music": {
+        "message": "音楽"
+    },
+    "sidebar_movies": {
+        "message": "映画とテレビ"
+    },
+    "sidebar_live": {
+        "message": "ライブ"
+    },
+    "sidebar_gaming": {
+        "message": "ゲーム"
+    },
+    "sidebar_news": {
+        "message": "ニュース"
+    },
+    "sidebar_sports": {
+        "message": "スポーツ"
+    },
+    "sidebar_courses": {
+        "message": "コース"
+    },
+    "sidebar_youtube_premium": {
+        "message": "YouTube Premium"
+    },
+    "sidebar_youtube_music": {
+        "message": "YouTube Music"
+    },
+    "sidebar_youtube_kids": {
+        "message": "YouTube Kids"
+    },
+    "sidebar_report_history": {
+        "message": "報告履歴"
+    },
+    "sidebar_about": {
+        "message": "概要"
     }
 }
