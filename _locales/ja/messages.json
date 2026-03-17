@@ -65,17 +65,26 @@
     "account": {
         "message": "アカウント"
     },
+    "sidebar_home_shorts_section": {
+        "message": "ホームとショートのセクション全体"
+    },
     "sidebar_home": {
         "message": "ホーム"
     },
     "sidebar_shorts": {
         "message": "ショート"
     },
+    "sidebar_subscriptions_section": {
+        "message": "登録チャンネルのセクション全体"
+    },
     "sidebar_subscriptions": {
         "message": "登録チャンネル"
     },
     "sidebar_subscriptions_channels": {
         "message": "各チャンネル"
+    },
+    "sidebar_library_section": {
+        "message": "マイページのセクション全体"
     },
     "sidebar_library": {
         "message": "マイページ"
@@ -98,6 +107,9 @@
     "sidebar_downloads": {
         "message": "オフライン"
     },
+    "sidebar_explore_section": {
+        "message": "探索全体"
+    },
     "sidebar_music": {
         "message": "音楽"
     },
@@ -118,6 +130,9 @@
     },
     "sidebar_courses": {
         "message": "コース"
+    },
+    "sidebar_more_from_youtube_section": {
+        "message": "YouTube の他のサービス全体"
     },
     "sidebar_youtube_premium": {
         "message": "YouTube Premium"

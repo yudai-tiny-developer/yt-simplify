@@ -65,17 +65,26 @@
     "account": {
         "message": "Account"
     },
+    "sidebar_home_shorts_section": {
+        "message": "Home & Shorts Section"
+    },
     "sidebar_home": {
         "message": "Home"
     },
     "sidebar_shorts": {
         "message": "Shorts"
     },
+    "sidebar_subscriptions_section": {
+        "message": "Subscriptions Section"
+    },
     "sidebar_subscriptions": {
         "message": "Subscriptions"
     },
     "sidebar_subscriptions_channels": {
         "message": "Subscriptions Channels"
+    },
+    "sidebar_library_section": {
+        "message": "Library Section"
     },
     "sidebar_library": {
         "message": "You"
@@ -98,6 +107,9 @@
     "sidebar_downloads": {
         "message": "Downloads"
     },
+    "sidebar_explore_section": {
+        "message": "Explore Section"
+    },
     "sidebar_music": {
         "message": "Music"
     },
@@ -118,6 +130,9 @@
     },
     "sidebar_courses": {
         "message": "Courses"
+    },
+    "sidebar_more_from_youtube_section": {
+        "message": "More from YouTube Section"
     },
     "sidebar_youtube_premium": {
         "message": "YouTube Premium"

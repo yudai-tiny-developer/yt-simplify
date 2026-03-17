@@ -133,7 +133,13 @@ function main(common, settings, progress, data) {
         container4.appendChild(row);
     }
 
+    // Home & Shorts Section
     {
+        const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_home_shorts_section));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_home_shorts_section_enabled', data.sidebar_home_shorts_section_enabled, common.default_sidebar_home_shorts_section_enabled, common.value));
+        container5.appendChild(row);
+    } {
         const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_home));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_home_enabled', data.sidebar_home_enabled, common.default_sidebar_home_enabled, common.value));
@@ -142,6 +148,14 @@ function main(common, settings, progress, data) {
         const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_shorts));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_shorts_enabled', data.sidebar_shorts_enabled, common.default_sidebar_shorts_enabled, common.value));
+        container5.appendChild(row);
+    }
+
+    // Subscriptions Section
+    {
+        const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_subscriptions_section));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_subscriptions_section_enabled', data.sidebar_subscriptions_section_enabled, common.default_sidebar_subscriptions_section_enabled, common.value));
         container5.appendChild(row);
     } {
         const row = settings.createRow(row_class);
@@ -152,6 +166,14 @@ function main(common, settings, progress, data) {
         const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_subscriptions_channels));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_subscriptions_channels_enabled', data.sidebar_subscriptions_channels_enabled, common.default_sidebar_subscriptions_channels_enabled, common.value));
+        container5.appendChild(row);
+    }
+
+    // Library Section
+    {
+        const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_library_section));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_library_section_enabled', data.sidebar_library_section_enabled, common.default_sidebar_library_section_enabled, common.value));
         container5.appendChild(row);
     } {
         const row = settings.createRow(row_class);
@@ -187,6 +209,14 @@ function main(common, settings, progress, data) {
         const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_downloads));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_downloads_enabled', data.sidebar_downloads_enabled, common.default_sidebar_downloads_enabled, common.value));
+        container5.appendChild(row);
+    }
+
+    // Explore Section
+    {
+        const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_explore_section));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_explore_section_enabled', data.sidebar_explore_section_enabled, common.default_sidebar_explore_section_enabled, common.value));
         container5.appendChild(row);
     } {
         const row = settings.createRow(row_class);
@@ -228,6 +258,14 @@ function main(common, settings, progress, data) {
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_courses));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_courses_enabled', data.sidebar_courses_enabled, common.default_sidebar_courses_enabled, common.value));
         container5.appendChild(row);
+    }
+
+    // More from YouTube Section
+    {
+        const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_more_from_youtube_section));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_more_from_youtube_section_enabled', data.sidebar_more_from_youtube_section_enabled, common.default_sidebar_more_from_youtube_section_enabled, common.value));
+        container5.appendChild(row);
     } {
         const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_youtube_premium));
@@ -243,12 +281,16 @@ function main(common, settings, progress, data) {
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_youtube_kids));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_youtube_kids_enabled', data.sidebar_youtube_kids_enabled, common.default_sidebar_youtube_kids_enabled, common.value));
         container5.appendChild(row);
-    } {
+    }
+
+    {
         const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_report_history));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_report_history_enabled', data.sidebar_report_history_enabled, common.default_sidebar_report_history_enabled, common.value));
         container5.appendChild(row);
-    } {
+    }
+
+    {
         const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_about));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_about_enabled', data.sidebar_about_enabled, common.default_sidebar_about_enabled, common.value));
