@@ -1,24 +1,25 @@
 body {
-    display: flex;
-    width: fit-content;
-    justify-content: center;
     margin: 0;
     text-wrap: nowrap;
-    min-width: 100%;
 }
 
-div.grid {
-    display: grid;
-    grid-template-areas:
-        "a b"
-        "c c";
-    row-gap: 8px;
-    column-gap: 8px;
-    align-items: start;
+h1 {
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
 }
 
 div.table {
     display: table;
+    margin-bottom: 8px;
 }
 
 div.row {
@@ -29,6 +30,16 @@ div.cell {
     display: table-cell;
     vertical-align: middle;
     padding: 8px;
+}
+
+div.cell:first-child {
+    width: 270px;
+    margin-right: auto;
+}
+
+div.cell:last-child {
+    width: 80px;
+    margin-left: auto;
 }
 
 div.footer {
@@ -110,6 +121,10 @@ div#reset_progress.done {
         background-color: rgb(255, 255, 255);
     }
 
+    h1 {
+        color: rgb(0, 0, 0);
+    }
+
     div.table,
     div.footer {
         background-color: rgb(249, 249, 249);
@@ -158,6 +173,10 @@ div#reset_progress.done {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: rgb(0, 0, 0);
+    }
+
+    h1 {
+        color: rgb(255, 255, 255);
     }
 
     div.table,

@@ -52,5 +52,86 @@
     },
     "fullscreen_grid": {
         "message": "Fullscreen Grid"
+    },
+    "search_voice": {
+        "message": "音声で検索"
+    },
+    "create": {
+        "message": "作成"
+    },
+    "notifications": {
+        "message": "通知"
+    },
+    "account": {
+        "message": "アカウント"
+    },
+    "sidebar_home_shorts_section": {
+        "message": "ホームとショートのセクション全体"
+    },
+    "sidebar_home": {
+        "message": "ホーム"
+    },
+    "sidebar_shorts": {
+        "message": "ショート"
+    },
+    "sidebar_subscriptions_section": {
+        "message": "登録チャンネルのセクション全体"
+    },
+    "sidebar_subscriptions": {
+        "message": "登録チャンネル"
+    },
+    "sidebar_subscriptions_channels": {
+        "message": "各チャンネル"
+    },
+    "sidebar_library_section": {
+        "message": "マイページのセクション全体"
+    },
+    "sidebar_library": {
+        "message": "マイページ"
+    },
+    "sidebar_history": {
+        "message": "履歴"
+    },
+    "sidebar_playlists": {
+        "message": "再生リスト"
+    },
+    "sidebar_watch_later": {
+        "message": "後で見る"
+    },
+    "sidebar_liked_videos": {
+        "message": "高く評価した動画"
+    },
+    "sidebar_your_videos": {
+        "message": "作成した動画"
+    },
+    "sidebar_downloads": {
+        "message": "オフライン"
+    },
+    "sidebar_podcasts": {
+        "message": "ポッドキャスト"
+    },
+    "sidebar_clips": {
+        "message": "クリップ"
+    },
+    "sidebar_explore_section": {
+        "message": "探索"
+    },
+    "sidebar_more_from_youtube_section": {
+        "message": "YouTube の他のサービス全体"
+    },
+    "sidebar_youtube_premium": {
+        "message": "YouTube Premium"
+    },
+    "sidebar_youtube_music": {
+        "message": "YouTube Music"
+    },
+    "sidebar_youtube_kids": {
+        "message": "YouTube Kids"
+    },
+    "sidebar_report_history": {
+        "message": "報告履歴"
+    },
+    "sidebar_about": {
+        "message": "概要"
     }
 }

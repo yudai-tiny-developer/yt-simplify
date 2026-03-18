@@ -52,5 +52,86 @@
     },
     "fullscreen_grid": {
         "message": "Fullscreen Grid"
+    },
+    "search_voice": {
+        "message": "Search Voice"
+    },
+    "create": {
+        "message": "Create"
+    },
+    "notifications": {
+        "message": "Notifications"
+    },
+    "account": {
+        "message": "Account"
+    },
+    "sidebar_home_shorts_section": {
+        "message": "Home & Shorts Section"
+    },
+    "sidebar_home": {
+        "message": "Home"
+    },
+    "sidebar_shorts": {
+        "message": "Shorts"
+    },
+    "sidebar_subscriptions_section": {
+        "message": "Subscriptions Section"
+    },
+    "sidebar_subscriptions": {
+        "message": "Subscriptions"
+    },
+    "sidebar_subscriptions_channels": {
+        "message": "Subscriptions Channels"
+    },
+    "sidebar_library_section": {
+        "message": "Library Section"
+    },
+    "sidebar_library": {
+        "message": "You"
+    },
+    "sidebar_history": {
+        "message": "History"
+    },
+    "sidebar_playlists": {
+        "message": "Playlists"
+    },
+    "sidebar_watch_later": {
+        "message": "Watch Later"
+    },
+    "sidebar_liked_videos": {
+        "message": "Liked Videos"
+    },
+    "sidebar_your_videos": {
+        "message": "Your Videos"
+    },
+    "sidebar_downloads": {
+        "message": "Downloads"
+    },
+    "sidebar_podcasts": {
+        "message": "Podcasts"
+    },
+    "sidebar_clips": {
+        "message": "Clips"
+    },
+    "sidebar_explore_section": {
+        "message": "Explore Section"
+    },
+    "sidebar_more_from_youtube_section": {
+        "message": "More from YouTube Section"
+    },
+    "sidebar_youtube_premium": {
+        "message": "YouTube Premium"
+    },
+    "sidebar_youtube_music": {
+        "message": "YouTube Music"
+    },
+    "sidebar_youtube_kids": {
+        "message": "YouTube Kids"
+    },
+    "sidebar_report_history": {
+        "message": "Report History"
+    },
+    "sidebar_about": {
+        "message": "About"
     }
 }
