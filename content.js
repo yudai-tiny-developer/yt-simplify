@@ -148,37 +148,17 @@ function main(common) {
             document.documentElement.style.setProperty('--yt-simplify-sidebar-downloads-visibility', common.value(data.sidebar_downloads_enabled, common.default_sidebar_downloads_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty('--yt-simplify-sidebar-downloads-pointer-events', common.value(data.sidebar_downloads_enabled, common.default_sidebar_downloads_enabled) ? 'unset' : 'none');
 
+            document.documentElement.style.setProperty('--yt-simplify-sidebar-podcasts-display', common.value(data.sidebar_podcasts_enabled, common.default_sidebar_podcasts_enabled) ? 'block' : 'none');
+            document.documentElement.style.setProperty('--yt-simplify-sidebar-podcasts-visibility', common.value(data.sidebar_podcasts_enabled, common.default_sidebar_podcasts_enabled) ? 'unset' : 'hidden');
+            document.documentElement.style.setProperty('--yt-simplify-sidebar-podcasts-pointer-events', common.value(data.sidebar_podcasts_enabled, common.default_sidebar_podcasts_enabled) ? 'unset' : 'none');
+
+            document.documentElement.style.setProperty('--yt-simplify-sidebar-clips-display', common.value(data.sidebar_clips_enabled, common.default_sidebar_clips_enabled) ? 'block' : 'none');
+            document.documentElement.style.setProperty('--yt-simplify-sidebar-clips-visibility', common.value(data.sidebar_clips_enabled, common.default_sidebar_clips_enabled) ? 'unset' : 'hidden');
+            document.documentElement.style.setProperty('--yt-simplify-sidebar-clips-pointer-events', common.value(data.sidebar_clips_enabled, common.default_sidebar_clips_enabled) ? 'unset' : 'none');
+
             document.documentElement.style.setProperty('--yt-simplify-sidebar-explore-section-display', common.value(data.sidebar_explore_section_enabled, common.default_sidebar_explore_section_enabled) ? 'block' : 'none');
             document.documentElement.style.setProperty('--yt-simplify-sidebar-explore-section-visibility', common.value(data.sidebar_explore_section_enabled, common.default_sidebar_explore_section_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty('--yt-simplify-sidebar-explore-section-pointer-events', common.value(data.sidebar_explore_section_enabled, common.default_sidebar_explore_section_enabled) ? 'unset' : 'none');
-
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-music-display', common.value(data.sidebar_music_enabled, common.default_sidebar_music_enabled) ? 'block' : 'none');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-music-visibility', common.value(data.sidebar_music_enabled, common.default_sidebar_music_enabled) ? 'unset' : 'hidden');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-music-pointer-events', common.value(data.sidebar_music_enabled, common.default_sidebar_music_enabled) ? 'unset' : 'none');
-
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-movies-display', common.value(data.sidebar_movies_enabled, common.default_sidebar_movies_enabled) ? 'block' : 'none');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-movies-visibility', common.value(data.sidebar_movies_enabled, common.default_sidebar_movies_enabled) ? 'unset' : 'hidden');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-movies-pointer-events', common.value(data.sidebar_movies_enabled, common.default_sidebar_movies_enabled) ? 'unset' : 'none');
-
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-live-display', common.value(data.sidebar_live_enabled, common.default_sidebar_live_enabled) ? 'block' : 'none');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-live-visibility', common.value(data.sidebar_live_enabled, common.default_sidebar_live_enabled) ? 'unset' : 'hidden');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-live-pointer-events', common.value(data.sidebar_live_enabled, common.default_sidebar_live_enabled) ? 'unset' : 'none');
-
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-gaming-display', common.value(data.sidebar_gaming_enabled, common.default_sidebar_gaming_enabled) ? 'block' : 'none');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-gaming-visibility', common.value(data.sidebar_gaming_enabled, common.default_sidebar_gaming_enabled) ? 'unset' : 'hidden');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-gaming-pointer-events', common.value(data.sidebar_gaming_enabled, common.default_sidebar_gaming_enabled) ? 'unset' : 'none');
-
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-news-display', common.value(data.sidebar_news_enabled, common.default_sidebar_news_enabled) ? 'block' : 'none');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-news-visibility', common.value(data.sidebar_news_enabled, common.default_sidebar_news_enabled) ? 'unset' : 'hidden');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-news-pointer-events', common.value(data.sidebar_news_enabled, common.default_sidebar_news_enabled) ? 'unset' : 'none');
-
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-sports-display', common.value(data.sidebar_sports_enabled, common.default_sidebar_sports_enabled) ? 'block' : 'none');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-sports-visibility', common.value(data.sidebar_sports_enabled, common.default_sidebar_sports_enabled) ? 'unset' : 'hidden');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-sports-pointer-events', common.value(data.sidebar_sports_enabled, common.default_sidebar_sports_enabled) ? 'unset' : 'none');
-
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-courses-display', common.value(data.sidebar_courses_enabled, common.default_sidebar_courses_enabled) ? 'block' : 'none');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-courses-visibility', common.value(data.sidebar_courses_enabled, common.default_sidebar_courses_enabled) ? 'unset' : 'hidden');
-            document.documentElement.style.setProperty('--yt-simplify-sidebar-courses-pointer-events', common.value(data.sidebar_courses_enabled, common.default_sidebar_courses_enabled) ? 'unset' : 'none');
 
             document.documentElement.style.setProperty('--yt-simplify-sidebar-more-from-youtube-section-display', common.value(data.sidebar_more_from_youtube_section_enabled, common.default_sidebar_more_from_youtube_section_enabled) ? 'block' : 'none');
             document.documentElement.style.setProperty('--yt-simplify-sidebar-more-from-youtube-section-visibility', common.value(data.sidebar_more_from_youtube_section_enabled, common.default_sidebar_more_from_youtube_section_enabled) ? 'unset' : 'hidden');

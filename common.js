@@ -40,15 +40,10 @@ export const storage = [
     'sidebar_liked_videos_enabled',
     'sidebar_your_videos_enabled',
     'sidebar_downloads_enabled',
+    'sidebar_podcasts_enabled',
+    'sidebar_clips_enabled',
 
     'sidebar_explore_section_enabled',
-    'sidebar_music_enabled',
-    'sidebar_movies_enabled',
-    'sidebar_live_enabled',
-    'sidebar_gaming_enabled',
-    'sidebar_news_enabled',
-    'sidebar_sports_enabled',
-    'sidebar_courses_enabled',
 
     'sidebar_more_from_youtube_section_enabled',
     'sidebar_youtube_premium_enabled',
@@ -101,15 +96,10 @@ export const default_sidebar_watch_later_enabled = true;
 export const default_sidebar_liked_videos_enabled = true;
 export const default_sidebar_your_videos_enabled = true;
 export const default_sidebar_downloads_enabled = true;
+export const default_sidebar_podcasts_enabled = true;
+export const default_sidebar_clips_enabled = true;
 
 export const default_sidebar_explore_section_enabled = true;
-export const default_sidebar_music_enabled = true;
-export const default_sidebar_movies_enabled = true;
-export const default_sidebar_live_enabled = true;
-export const default_sidebar_gaming_enabled = true;
-export const default_sidebar_news_enabled = true;
-export const default_sidebar_sports_enabled = true;
-export const default_sidebar_courses_enabled = true;
 
 export const default_sidebar_more_from_youtube_section_enabled = true;
 export const default_sidebar_youtube_premium_enabled = true;
@@ -162,15 +152,10 @@ export const label = {
     sidebar_liked_videos: chrome.i18n.getMessage('sidebar_liked_videos'),
     sidebar_your_videos: chrome.i18n.getMessage('sidebar_your_videos'),
     sidebar_downloads: chrome.i18n.getMessage('sidebar_downloads'),
+    sidebar_podcasts: chrome.i18n.getMessage('sidebar_podcasts'),
+    sidebar_clips: chrome.i18n.getMessage('sidebar_clips'),
 
     sidebar_explore_section: chrome.i18n.getMessage('sidebar_explore_section'),
-    sidebar_music: chrome.i18n.getMessage('sidebar_music'),
-    sidebar_movies: chrome.i18n.getMessage('sidebar_movies'),
-    sidebar_live: chrome.i18n.getMessage('sidebar_live'),
-    sidebar_gaming: chrome.i18n.getMessage('sidebar_gaming'),
-    sidebar_news: chrome.i18n.getMessage('sidebar_news'),
-    sidebar_sports: chrome.i18n.getMessage('sidebar_sports'),
-    sidebar_courses: chrome.i18n.getMessage('sidebar_courses'),
 
     sidebar_more_from_youtube_section: chrome.i18n.getMessage('sidebar_more_from_youtube_section'),
     sidebar_youtube_premium: chrome.i18n.getMessage('sidebar_youtube_premium'),

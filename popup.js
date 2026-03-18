@@ -210,6 +210,16 @@ function main(common, settings, progress, data) {
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_downloads));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_downloads_enabled', data.sidebar_downloads_enabled, common.default_sidebar_downloads_enabled, common.value));
         container5.appendChild(row);
+    } {
+        const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_podcasts));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_podcasts_enabled', data.sidebar_podcasts_enabled, common.default_sidebar_podcasts_enabled, common.value));
+        container5.appendChild(row);
+    } {
+        const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_clips));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_clips_enabled', data.sidebar_clips_enabled, common.default_sidebar_clips_enabled, common.value));
+        container5.appendChild(row);
     }
 
     // Explore Section
@@ -217,46 +227,6 @@ function main(common, settings, progress, data) {
         const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_explore_section));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_explore_section_enabled', data.sidebar_explore_section_enabled, common.default_sidebar_explore_section_enabled, common.value));
-        container5.appendChild(row);
-    } {
-        const row = settings.createRow(row_class);
-        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_music));
-        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_music_enabled', data.sidebar_music_enabled, common.default_sidebar_music_enabled, common.value));
-        container5.appendChild(row);
-    } {
-        const row = settings.createRow(row_class);
-        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_movies));
-        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_movies_enabled', data.sidebar_movies_enabled, common.default_sidebar_movies_enabled, common.value));
-        container5.appendChild(row);
-    } {
-        const row = settings.createRow(row_class);
-        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_gaming));
-        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_gaming_enabled', data.sidebar_gaming_enabled, common.default_sidebar_gaming_enabled, common.value));
-        container5.appendChild(row);
-    } {
-        const row = settings.createRow(row_class);
-        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_live));
-        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_live_enabled', data.sidebar_live_enabled, common.default_sidebar_live_enabled, common.value));
-        container5.appendChild(row);
-    } {
-        const row = settings.createRow(row_class);
-        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_gaming));
-        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_gaming_enabled', data.sidebar_gaming_enabled, common.default_sidebar_gaming_enabled, common.value));
-        container5.appendChild(row);
-    } {
-        const row = settings.createRow(row_class);
-        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_news));
-        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_news_enabled', data.sidebar_news_enabled, common.default_sidebar_news_enabled, common.value));
-        container5.appendChild(row);
-    } {
-        const row = settings.createRow(row_class);
-        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_sports));
-        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_sports_enabled', data.sidebar_sports_enabled, common.default_sidebar_sports_enabled, common.value));
-        container5.appendChild(row);
-    } {
-        const row = settings.createRow(row_class);
-        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_courses));
-        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_courses_enabled', data.sidebar_courses_enabled, common.default_sidebar_courses_enabled, common.value));
         container5.appendChild(row);
     }
 

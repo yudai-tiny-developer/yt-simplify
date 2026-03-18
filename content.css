@@ -139,37 +139,17 @@
     --yt-simplify-sidebar-downloads-visibility: hidden;
     --yt-simplify-sidebar-downloads-pointer-events: none;
 
+    --yt-simplify-sidebar-podcasts-display: none;
+    --yt-simplify-sidebar-podcasts-visibility: hidden;
+    --yt-simplify-sidebar-podcasts-pointer-events: none;
+
+    --yt-simplify-sidebar-clips-display: none;
+    --yt-simplify-sidebar-clips-visibility: hidden;
+    --yt-simplify-sidebar-clips-pointer-events: none;
+
     --yt-simplify-sidebar-explore-section-display: none;
     --yt-simplify-sidebar-explore-section-visibility: hidden;
     --yt-simplify-sidebar-explore-section-pointer-events: none;
-
-    --yt-simplify-sidebar-music-display: none;
-    --yt-simplify-sidebar-music-visibility: hidden;
-    --yt-simplify-sidebar-music-pointer-events: none;
-
-    --yt-simplify-sidebar-movies-display: none;
-    --yt-simplify-sidebar-movies-visibility: hidden;
-    --yt-simplify-sidebar-movies-pointer-events: none;
-
-    --yt-simplify-sidebar-live-display: none;
-    --yt-simplify-sidebar-live-visibility: hidden;
-    --yt-simplify-sidebar-live-pointer-events: none;
-
-    --yt-simplify-sidebar-gaming-display: none;
-    --yt-simplify-sidebar-gaming-visibility: hidden;
-    --yt-simplify-sidebar-gaming-pointer-events: none;
-
-    --yt-simplify-sidebar-news-display: none;
-    --yt-simplify-sidebar-news-visibility: hidden;
-    --yt-simplify-sidebar-news-pointer-events: none;
-
-    --yt-simplify-sidebar-sports-display: none;
-    --yt-simplify-sidebar-sports-visibility: hidden;
-    --yt-simplify-sidebar-sports-pointer-events: none;
-
-    --yt-simplify-sidebar-courses-display: none;
-    --yt-simplify-sidebar-courses-visibility: hidden;
-    --yt-simplify-sidebar-courses-pointer-events: none;
 
     --yt-simplify-sidebar-more-from-youtube-section-display: none;
     --yt-simplify-sidebar-more-from-youtube-section-visibility: hidden;
@@ -350,7 +330,7 @@ tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/subscriptio
     pointer-events: var(--yt-simplify-sidebar-subscriptions-pointer-events) !important;
 }
 
-tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="/@"]) {
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer:has(a#endpoint[href^="/@"]) {
     display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
     visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
     pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
@@ -362,19 +342,20 @@ tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscript
     pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
 }
 
-tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="/c/"]) {
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer:has(a#endpoint[href^="/c/"]) {
     display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
     visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
     pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
 }
 
-tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="/user/"]) {
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer:has(a#endpoint[href^="/user/"]) {
     display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
     visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
     pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
 }
 
-tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer:not(:has(a#endpoint[href="/feed/subscriptions"])):has(tp-yt-paper-item) {
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer#expander-item,
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer#collapser-item {
     display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
     visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
     pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
@@ -428,52 +409,23 @@ tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/downloads"]
     pointer-events: var(--yt-simplify-sidebar-downloads-pointer-events) !important;
 }
 
-tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href^="/feed/storefront"]) {
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/podcasts"]) {
+    display: var(--yt-simplify-sidebar-podcasts-display) !important;
+    visibility: var(--yt-simplify-sidebar-podcasts-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-podcasts-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/clips"]) {
+    display: var(--yt-simplify-sidebar-clips-display) !important;
+    visibility: var(--yt-simplify-sidebar-clips-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-clips-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-section-renderer:not(:has(a#endpoint[href="/feed/subscriptions"])):not(:has(a#endpoint[href="/feed/you"])):has(ytd-guide-entry-renderer#expander-item),
+tp-yt-app-drawer ytd-guide-section-renderer:not(:has(a#endpoint[href="/feed/subscriptions"])):not(:has(a#endpoint[href="/feed/you"])):has(ytd-guide-entry-renderer#collapser-item) {
     display: var(--yt-simplify-sidebar-explore-section-display) !important;
     visibility: var(--yt-simplify-sidebar-explore-section-visibility) !important;
     pointer-events: var(--yt-simplify-sidebar-explore-section-pointer-events) !important;
-}
-
-tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"]) {
-    display: var(--yt-simplify-sidebar-music-display) !important;
-    visibility: var(--yt-simplify-sidebar-music-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-music-pointer-events) !important;
-}
-
-tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="/feed/storefront"]) {
-    display: var(--yt-simplify-sidebar-movies-display) !important;
-    visibility: var(--yt-simplify-sidebar-movies-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-movies-pointer-events) !important;
-}
-
-tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/channel/UC4R8DWoMoI7CAwX8_LjQHig"]) {
-    display: var(--yt-simplify-sidebar-live-display) !important;
-    visibility: var(--yt-simplify-sidebar-live-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-live-pointer-events) !important;
-}
-
-tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/gaming"]) {
-    display: var(--yt-simplify-sidebar-gaming-display) !important;
-    visibility: var(--yt-simplify-sidebar-gaming-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-gaming-pointer-events) !important;
-}
-
-tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/channel/UCYfdidRxbB8Qhf0Nx7ioOYw"]) {
-    display: var(--yt-simplify-sidebar-news-display) !important;
-    visibility: var(--yt-simplify-sidebar-news-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-news-pointer-events) !important;
-}
-
-tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"]) {
-    display: var(--yt-simplify-sidebar-sports-display) !important;
-    visibility: var(--yt-simplify-sidebar-sports-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-sports-pointer-events) !important;
-}
-
-tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/courses_destination"]) {
-    display: var(--yt-simplify-sidebar-courses-display) !important;
-    visibility: var(--yt-simplify-sidebar-courses-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-courses-pointer-events) !important;
 }
 
 tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/premium"]) {

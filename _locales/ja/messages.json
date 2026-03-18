@@ -107,29 +107,14 @@
     "sidebar_downloads": {
         "message": "オフライン"
     },
+    "sidebar_podcasts": {
+        "message": "ポッドキャスト"
+    },
+    "sidebar_clips": {
+        "message": "クリップ"
+    },
     "sidebar_explore_section": {
-        "message": "探索全体"
-    },
-    "sidebar_music": {
-        "message": "音楽"
-    },
-    "sidebar_movies": {
-        "message": "映画とテレビ"
-    },
-    "sidebar_live": {
-        "message": "ライブ"
-    },
-    "sidebar_gaming": {
-        "message": "ゲーム"
-    },
-    "sidebar_news": {
-        "message": "ニュース"
-    },
-    "sidebar_sports": {
-        "message": "スポーツ"
-    },
-    "sidebar_courses": {
-        "message": "コース"
+        "message": "探索"
     },
     "sidebar_more_from_youtube_section": {
         "message": "YouTube の他のサービス全体"

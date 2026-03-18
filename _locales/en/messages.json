@@ -107,29 +107,14 @@
     "sidebar_downloads": {
         "message": "Downloads"
     },
+    "sidebar_podcasts": {
+        "message": "Podcasts"
+    },
+    "sidebar_clips": {
+        "message": "Clips"
+    },
     "sidebar_explore_section": {
         "message": "Explore Section"
-    },
-    "sidebar_music": {
-        "message": "Music"
-    },
-    "sidebar_movies": {
-        "message": "Movies & TV"
-    },
-    "sidebar_live": {
-        "message": "Live"
-    },
-    "sidebar_gaming": {
-        "message": "Gaming"
-    },
-    "sidebar_news": {
-        "message": "News"
-    },
-    "sidebar_sports": {
-        "message": "Sports"
-    },
-    "sidebar_courses": {
-        "message": "Courses"
     },
     "sidebar_more_from_youtube_section": {
         "message": "More from YouTube Section"
