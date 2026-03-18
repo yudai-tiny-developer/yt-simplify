@@ -331,34 +331,35 @@ tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/subscriptio
 }
 
 tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer:has(a#endpoint[href^="/@"]) {
-    display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
-    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
+    display: var(--yt-simplify-sidebar-subscriptions-channels-display);
+    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility);
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events);
 }
 
 tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer:has(a#endpoint[href^="/channel/"]) {
-    display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
-    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
+    display: var(--yt-simplify-sidebar-subscriptions-channels-display);
+    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility);
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events);
 }
 
 tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer:has(a#endpoint[href^="/c/"]) {
-    display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
-    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
+    display: var(--yt-simplify-sidebar-subscriptions-channels-display);
+    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility);
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events);
 }
 
 tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer:has(a#endpoint[href^="/user/"]) {
-    display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
-    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
+    display: var(--yt-simplify-sidebar-subscriptions-channels-display);
+    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility);
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events);
 }
 
-tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer#expander-item,
-tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer#collapser-item {
-    display: var(--yt-simplify-sidebar-subscriptions-channels-display) !important;
-    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility) !important;
-    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events) !important;
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer#expander-item:not([aria-expanded]),
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer#expander-item[aria-expanded="false"],
+tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/subscriptions"]) ytd-guide-entry-renderer#collapser-item[aria-expanded="true"] {
+    display: var(--yt-simplify-sidebar-subscriptions-channels-display);
+    visibility: var(--yt-simplify-sidebar-subscriptions-channels-visibility);
+    pointer-events: var(--yt-simplify-sidebar-subscriptions-channels-pointer-events);
 }
 
 tp-yt-app-drawer ytd-guide-section-renderer:has(a#endpoint[href="/feed/you"]) {
