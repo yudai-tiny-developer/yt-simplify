@@ -63,6 +63,14 @@
     --yt-simplify-youtube-visibility: hidden;
     --yt-simplify-youtube-pointer-events: none;
 
+    --yt-simplify-more_videos-display: none;
+    --yt-simplify-more_videos-visibility: hidden;
+    --yt-simplify-more_videos-pointer-events: none;
+
+    --yt-simplify-share-display: none;
+    --yt-simplify-share-visibility: hidden;
+    --yt-simplify-share-pointer-events: none;
+
     --yt-simplify-fullscreen-grid-display: none;
     --yt-simplify-fullscreen-grid-visibility: hidden;
     --yt-simplify-fullscreen-grid-pointer-events: none;
@@ -200,7 +208,19 @@ div#movie_player span.ytp-volume-area:not(:empty) {
     pointer-events: var(--yt-simplify-volume-pointer-events) !important;
 }
 
+div#player-controls volume-controls {
+    display: var(--yt-simplify-volume-display) !important;
+    visibility: var(--yt-simplify-volume-visibility) !important;
+    pointer-events: var(--yt-simplify-volume-pointer-events) !important;
+}
+
 div#movie_player div.ytp-time-display:not(.ytp-live):not(:empty) {
+    display: var(--yt-simplify-time-display) !important;
+    visibility: var(--yt-simplify-time-visibility) !important;
+    pointer-events: var(--yt-simplify-time-pointer-events) !important;
+}
+
+div#player-controls player-time-display {
     display: var(--yt-simplify-time-display) !important;
     visibility: var(--yt-simplify-time-visibility) !important;
     pointer-events: var(--yt-simplify-time-pointer-events) !important;
@@ -224,7 +244,19 @@ div#movie_player button.ytp-subtitles-button:not(:empty) {
     pointer-events: var(--yt-simplify-subtitles-pointer-events) !important;
 }
 
+div#player-controls yt-closed-captions-toggle-button {
+    display: var(--yt-simplify-subtitles-display) !important;
+    visibility: var(--yt-simplify-subtitles-visibility) !important;
+    pointer-events: var(--yt-simplify-subtitles-pointer-events) !important;
+}
+
 div#movie_player button.ytp-settings-button:not(:empty) {
+    display: var(--yt-simplify-settings-display) !important;
+    visibility: var(--yt-simplify-settings-visibility) !important;
+    pointer-events: var(--yt-simplify-settings-pointer-events) !important;
+}
+
+div#player-controls div:has(> button.player-settings-icon) {
     display: var(--yt-simplify-settings-display) !important;
     visibility: var(--yt-simplify-settings-visibility) !important;
     pointer-events: var(--yt-simplify-settings-pointer-events) !important;
@@ -258,16 +290,34 @@ div#movie_player button.ytp-fullscreen-button:not(:empty) {
     pointer-events: var(--yt-simplify-fullscreen-pointer-events) !important;
 }
 
+div#player-controls div.ytwPlayerBottomControlsFullscreenButtonWrapper {
+    display: var(--yt-simplify-fullscreen-display) !important;
+    visibility: var(--yt-simplify-fullscreen-visibility) !important;
+    pointer-events: var(--yt-simplify-fullscreen-pointer-events) !important;
+}
+
 div#movie_player div.ytp-tooltip:not(.ytp-preview):not(:empty) {
     display: var(--yt-simplify-tooltip-display) !important;
     visibility: var(--yt-simplify-tooltip-visibility) !important;
     pointer-events: var(--yt-simplify-tooltip-pointer-events) !important;
 }
 
-div#movie_player a.ytp-youtube-button:not(:empty) {
+div#player-controls div.watch-on-youtube-button-wrapper {
     display: var(--yt-simplify-youtube-display) !important;
     visibility: var(--yt-simplify-youtube-visibility) !important;
     pointer-events: var(--yt-simplify-youtube-pointer-events) !important;
+}
+
+div#player-controls div.fullscreen-watch-next-entrypoint-wrapper {
+    display: var(--yt-simplify-more_videos-display) !important;
+    visibility: var(--yt-simplify-more_videos-visibility) !important;
+    pointer-events: var(--yt-simplify-more_videos-pointer-events) !important;
+}
+
+div#player-controls ytm-slim-metadata-button-renderer {
+    display: var(--yt-simplify-share-display) !important;
+    visibility: var(--yt-simplify-share-visibility) !important;
+    pointer-events: var(--yt-simplify-share-pointer-events) !important;
 }
 
 div#movie_player.html5-video-player.ytp-fullscreen.ytp-grid-scrollable>div.ytp-fullscreen-grid {

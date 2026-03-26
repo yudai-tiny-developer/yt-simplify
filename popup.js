@@ -109,6 +109,16 @@ function main(common, settings, progress, data) {
         row.appendChild(settings.createLabel(cell_class, common.label.youtube));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'youtube_enabled', data.youtube_enabled, common.default_youtube_enabled, common.value));
         container3.appendChild(row);
+    } {
+        const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.more_videos));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'more_videos_enabled', data.more_videos_enabled, common.default_more_videos_enabled, common.value));
+        container3.appendChild(row);
+    } {
+        const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.share));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'share_enabled', data.share_enabled, common.default_share_enabled, common.value));
+        container3.appendChild(row);
     }
 
     {
