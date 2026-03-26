@@ -232,6 +232,12 @@ div#movie_player div.ytp-chapter-container:not(:has([disabled])):not(:empty) {
     pointer-events: var(--yt-simplify-chapter-pointer-events) !important;
 }
 
+div#player-controls div.player-time-chapter-title {
+    display: var(--yt-simplify-chapter-display) !important;
+    visibility: var(--yt-simplify-chapter-visibility) !important;
+    pointer-events: var(--yt-simplify-chapter-pointer-events) !important;
+}
+
 div#movie_player button[data-tooltip-target-id="ytp-autonav-toggle-button"]:not(:empty) {
     display: var(--yt-simplify-autonav-display) !important;
     visibility: var(--yt-simplify-autonav-visibility) !important;
