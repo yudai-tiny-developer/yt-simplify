@@ -50,6 +50,12 @@
     "youtube": {
         "message": "YouTube で見る"
     },
+    "more_videos": {
+        "message": "その他の動画"
+    },
+    "share": {
+        "message": "共有"
+    },
     "fullscreen_grid": {
         "message": "Fullscreen Grid"
     },

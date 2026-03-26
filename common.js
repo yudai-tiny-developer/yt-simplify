@@ -16,6 +16,8 @@ export const storage = [
     'fullscreen_enabled',
     'tooltip_enabled',
     'youtube_enabled',
+    'more_videos_enabled',
+    'share_enabled',
 
     'fullscreen_grid_enabled',
 
@@ -72,6 +74,8 @@ export const default_remote_enabled = false;
 export const default_fullscreen_enabled = true;
 export const default_tooltip_enabled = false;
 export const default_youtube_enabled = false;
+export const default_more_videos_enabled = false;
+export const default_share_enabled = false;
 
 export const default_fullscreen_grid_enabled = false;
 
@@ -128,6 +132,8 @@ export const label = {
     fullscreen: chrome.i18n.getMessage('fullscreen'),
     tooltip: chrome.i18n.getMessage('tooltip'),
     youtube: chrome.i18n.getMessage('youtube'),
+    more_videos: chrome.i18n.getMessage('more_videos'),
+    share: chrome.i18n.getMessage('share'),
 
     fullscreen_grid: chrome.i18n.getMessage('fullscreen_grid'),
 

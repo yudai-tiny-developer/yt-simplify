@@ -71,6 +71,14 @@ function main(common) {
             document.documentElement.style.setProperty('--yt-simplify-youtube-visibility', common.value(data.youtube_enabled, common.default_youtube_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty('--yt-simplify-youtube-pointer-events', common.value(data.youtube_enabled, common.default_youtube_enabled) ? 'unset' : 'none');
 
+            document.documentElement.style.setProperty('--yt-simplify-more_videos-display', common.value(data.more_videos_enabled, common.default_more_videos_enabled) ? 'block' : 'none');
+            document.documentElement.style.setProperty('--yt-simplify-more_videos-visibility', common.value(data.more_videos_enabled, common.default_more_videos_enabled) ? 'unset' : 'hidden');
+            document.documentElement.style.setProperty('--yt-simplify-more_videos-pointer-events', common.value(data.more_videos_enabled, common.default_more_videos_enabled) ? 'unset' : 'none');
+
+            document.documentElement.style.setProperty('--yt-simplify-share-display', common.value(data.share_enabled, common.default_share_enabled) ? 'block' : 'none');
+            document.documentElement.style.setProperty('--yt-simplify-share-visibility', common.value(data.share_enabled, common.default_share_enabled) ? 'unset' : 'hidden');
+            document.documentElement.style.setProperty('--yt-simplify-share-pointer-events', common.value(data.share_enabled, common.default_share_enabled) ? 'unset' : 'none');
+
             document.documentElement.style.setProperty('--yt-simplify-fullscreen-grid-display', common.value(data.fullscreen_grid_enabled, common.default_fullscreen_grid_enabled) ? 'block' : 'none');
             document.documentElement.style.setProperty('--yt-simplify-fullscreen-grid-visibility', common.value(data.fullscreen_grid_enabled, common.default_fullscreen_grid_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty('--yt-simplify-fullscreen-grid-pointer-events', common.value(data.fullscreen_grid_enabled, common.default_fullscreen_grid_enabled) ? 'unset' : 'none');

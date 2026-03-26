@@ -50,6 +50,12 @@
     "youtube": {
         "message": "Watch on YouTube"
     },
+    "more_videos": {
+        "message": "More videos"
+    },
+    "share": {
+        "message": "Share"
+    },
     "fullscreen_grid": {
         "message": "Fullscreen Grid"
     },
