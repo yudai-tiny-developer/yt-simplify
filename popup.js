@@ -195,6 +195,11 @@ function main(common, settings, progress, data) {
         container6.appendChild(row);
     } {
         const row = settings.createRow(row_class);
+        row.appendChild(settings.createLabel(cell_class, common.label.sidebar_channel));
+        row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_channel_enabled', data.sidebar_channel_enabled, common.default_sidebar_channel_enabled, common.value));
+        container6.appendChild(row);
+    } {
+        const row = settings.createRow(row_class);
         row.appendChild(settings.createLabel(cell_class, common.label.sidebar_history));
         row.appendChild(settings.createToggle(cell_class, toggle_class, label_class, 'sidebar_history_enabled', data.sidebar_history_enabled, common.default_sidebar_history_enabled, common.value));
         container6.appendChild(row);

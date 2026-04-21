@@ -36,6 +36,7 @@ export const storage = [
 
     'sidebar_library_section_enabled',
     'sidebar_library_enabled',
+    'sidebar_channel_enabled',
     'sidebar_history_enabled',
     'sidebar_playlists_enabled',
     'sidebar_watch_later_enabled',
@@ -94,6 +95,7 @@ export const default_sidebar_subscriptions_channels_enabled = true;
 
 export const default_sidebar_library_section_enabled = true;
 export const default_sidebar_library_enabled = true;
+export const default_sidebar_channel_enabled = true;
 export const default_sidebar_history_enabled = true;
 export const default_sidebar_playlists_enabled = true;
 export const default_sidebar_watch_later_enabled = true;
@@ -152,6 +154,7 @@ export const label = {
 
     sidebar_library_section: chrome.i18n.getMessage('sidebar_library_section'),
     sidebar_library: chrome.i18n.getMessage('sidebar_library'),
+    sidebar_channel: chrome.i18n.getMessage('sidebar_channel'),
     sidebar_history: chrome.i18n.getMessage('sidebar_history'),
     sidebar_playlists: chrome.i18n.getMessage('sidebar_playlists'),
     sidebar_watch_later: chrome.i18n.getMessage('sidebar_watch_later'),
