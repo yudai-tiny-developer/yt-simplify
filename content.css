@@ -123,6 +123,10 @@
     --yt-simplify-sidebar-library-visibility: hidden;
     --yt-simplify-sidebar-library-pointer-events: none;
 
+    --yt-simplify-sidebar-channel-display: none;
+    --yt-simplify-sidebar-channel-visibility: hidden;
+    --yt-simplify-sidebar-channel-pointer-events: none;
+
     --yt-simplify-sidebar-history-display: none;
     --yt-simplify-sidebar-history-visibility: hidden;
     --yt-simplify-sidebar-history-pointer-events: none;
@@ -428,6 +432,12 @@ tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/you"]) {
     display: var(--yt-simplify-sidebar-library-display) !important;
     visibility: var(--yt-simplify-sidebar-library-visibility) !important;
     pointer-events: var(--yt-simplify-sidebar-library-pointer-events) !important;
+}
+
+tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href^="/@"]):has(tp-yt-paper-item > yt-icon:first-child svg) {
+    display: var(--yt-simplify-sidebar-channel-display) !important;
+    visibility: var(--yt-simplify-sidebar-channel-visibility) !important;
+    pointer-events: var(--yt-simplify-sidebar-channel-pointer-events) !important;
 }
 
 tp-yt-app-drawer ytd-guide-entry-renderer:has(a#endpoint[href="/feed/history"]) {

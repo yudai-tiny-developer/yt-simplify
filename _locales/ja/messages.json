@@ -95,6 +95,9 @@
     "sidebar_library": {
         "message": "マイページ"
     },
+    "sidebar_channel": {
+        "message": "チャンネル"
+    },
     "sidebar_history": {
         "message": "履歴"
     },

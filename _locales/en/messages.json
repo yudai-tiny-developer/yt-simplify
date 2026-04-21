@@ -95,6 +95,9 @@
     "sidebar_library": {
         "message": "You"
     },
+    "sidebar_channel": {
+        "message": "Your channel"
+    },
     "sidebar_history": {
         "message": "History"
     },

@@ -132,6 +132,10 @@ function main(common) {
             document.documentElement.style.setProperty('--yt-simplify-sidebar-library-visibility', common.value(data.sidebar_library_enabled, common.default_sidebar_library_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty('--yt-simplify-sidebar-library-pointer-events', common.value(data.sidebar_library_enabled, common.default_sidebar_library_enabled) ? 'unset' : 'none');
 
+            document.documentElement.style.setProperty('--yt-simplify-sidebar-channel-display', common.value(data.sidebar_channel_enabled, common.default_sidebar_channel_enabled) ? 'block' : 'none');
+            document.documentElement.style.setProperty('--yt-simplify-sidebar-channel-visibility', common.value(data.sidebar_channel_enabled, common.default_sidebar_channel_enabled) ? 'unset' : 'hidden');
+            document.documentElement.style.setProperty('--yt-simplify-sidebar-channel-pointer-events', common.value(data.sidebar_channel_enabled, common.default_sidebar_channel_enabled) ? 'unset' : 'none');
+
             document.documentElement.style.setProperty('--yt-simplify-sidebar-history-display', common.value(data.sidebar_history_enabled, common.default_sidebar_history_enabled) ? 'block' : 'none');
             document.documentElement.style.setProperty('--yt-simplify-sidebar-history-visibility', common.value(data.sidebar_history_enabled, common.default_sidebar_history_enabled) ? 'unset' : 'hidden');
             document.documentElement.style.setProperty('--yt-simplify-sidebar-history-pointer-events', common.value(data.sidebar_history_enabled, common.default_sidebar_history_enabled) ? 'unset' : 'none');
